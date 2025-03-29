@@ -1,0 +1,29 @@
+.container{
+    width: 400px;
+    height: 250px;
+    margin: 50px;
+    padding: 20px;
+    background-color: cadetblue;
+    box-sizing: border-box; /* 교수님 보더 박스 디게 좋아하네..*/
+    position: relative; /*부모에 해당되는건 relative?*/
+
+}
+
+.container .item{
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+}
+
+/*여기서 첫번째에 해당되는것 설정*/
+.container .item:nth-child(1){
+    position: absolute; /*자식에 해당되는건 absolute?*/
+    left: 40px;
+    bottom: 100px;
+}
+
+.container .item:nth-child(2){
+    position: absolute; /*자식에 해당되는건 absolute?*/
+    right: 40px;
+    bottom: 100px;
+}

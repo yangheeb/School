@@ -1,0 +1,21 @@
+.container{
+
+}
+.container>.item{
+    width: 200px;
+    height: 100px;
+    background-color: olivedrab;
+    margin-bottom: 20px; /*여백을 주는 것 */
+    padding: 20px;
+    border: 4px dashed blue; 
+    border-radius:25px; /*가장자리 둥굴게 */
+    box-sizing: border-box;
+}
+
+
+.container .item:nth-child(2){ 
+box-shadow: 10px 20px 10px rgba(0,0,0,0.5);
+}
+.container ,.item:nth-child(3){
+    opacity:0.5;
+}

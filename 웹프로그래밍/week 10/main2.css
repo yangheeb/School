@@ -1,0 +1,17 @@
+.container{
+    background-color: pink;
+    display: flex;  /* 배치를 옆으로 나란히. 자식 요소를 인라인 형태로 */
+    justify-content: center; /*왼쪽으로 붙어있던 박스를 중앙으로 옮김. 상자에 대한 배치*/
+}
+
+.container .item{
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    box-sizing: border-box; /*뭐 이걸로 고정하겠다고 함..*/
+    display: flex; /*이것도 글자를 가운데로?*/
+    justify-content: center; /*박스 안에 글자를 한 줄의 가운데로 정렬*/
+    align-items: center; /*글자를 가운데 중에 가운데로 배치*/
+}
+
