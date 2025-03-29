@@ -1,0 +1,605 @@
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    font-family: '나눔스퀘어';
+    
+}
+
+header{
+    background: lightgray;
+
+}
+
+a{
+text-decoration: none;
+}
+
+li{
+list-style-type: none;
+}
+
+#container {
+  width:1200px;   /* 내용 전체의 너비 */
+  margin:0 auto;  /* 내용을 화면 가운데 배치하도록 좌우 마진을 auto로 */
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/*커스터마이징-스크롤에 맞춰 따라오기*/
+.sticky{
+  position: sticky;
+  top:1rem;
+}
+
+/*헤더*/
+header {
+  margin: 0 auto;
+  width: 1200px;  /*가운데 정렬*/
+}
+
+header .top h1{
+  float:left;
+  padding: 40px 0 30px 30px ;
+}
+
+header .blog-href{
+  padding: 0 10px 0 0;
+}
+header .blog-href h2{
+  float: right;
+  padding: 20px 10px;
+  font-weight: normal;
+  
+}
+
+
+/*네비게이션바 메뉴*/
+header .btm {
+  border-top: 2px solid #ededed; 
+  border-bottom: 2px solid #ededed;
+  position: sticky;
+  top:0;
+}
+
+
+header .btm >div{
+  margin: 0 auto; width: 1200px;
+}
+
+header .btm .lnb{
+  float: left;
+}
+
+header .btm .lnb a{
+  display: block; 
+  line-height: 59px; 
+  padding: 0 40px; 
+  font-size: 20px; 
+  font-weight: bolder;
+}
+
+header .btm .lnb li{
+  float: left;
+}
+
+
+/*네비게이션바 > 로그인.회원가입*/
+header .btm .spot{
+  float: right;
+  padding: 0 10px 0 0;
+}
+
+header .btm .spot a{
+  display: inline-block;
+  position: relative;
+  padding: 0 15px;
+  line-height: 59px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+header .btm .spot a ~ a:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top:50%;
+  width: 1px;
+  height: 10px;
+  background: #e3e3e3;
+  transform: translateY(-50%);
+}
+
+header .btm .spot button{
+  width: 59px;
+  height: 59px;
+  font-size: 15px;
+  background-color: lightgray;
+}
+
+
+/*사이드바*/
+ 
+aside{
+    margin: 30 auto;
+    width: 300px;  /*가운데 정렬*/
+    height: 1500px;
+    float:left;
+    background-color:rgb(214, 214, 227)
+    
+}
+
+/*about.html에서 사이드바 높이*/
+.about_aside{
+  height: 2580px;
+}
+
+.post_aside{
+  height: 1200px;
+}
+.study_aside{
+  height: 1700px;
+}
+.sider{
+  position: sticky;
+  top:1rem;
+}
+
+.daily_aside{
+  height: 1000px;
+}
+
+.prologue_sider{
+  height: 1600px;
+}
+.prologue img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0 30px 100px;
+}
+
+.prologue h3{
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+#prologue video{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 50px;
+}
+
+.sider img{
+  position: relative;
+  top: 50px;
+  left: 50px;
+  right: 50px;
+  bottom: 50px;
+}
+
+.con div{
+  position: relative;
+  top: 70px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.con div h1{
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 8px;
+  font-weight: bold;
+}
+
+.con div p{
+  font-size: 15px;
+  font-weight: bold;
+} 
+
+.post-admin button{
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  background-color: lightgray;
+  margin: 0 10px 0 50px;
+}
+
+
+
+.sticky li{
+  padding: 20px 0 10px ;
+  font-size: 20px;
+  text-align: center;
+  
+}
+
+.sticky h3{
+  font-size: 20px;
+  text-align: center;
+  background-color: #ededed;
+  line-height: 40px;
+  height: 40px;
+  
+}
+
+
+/* about.html */
+/*섹션*/
+
+section{
+  margin: 00px auto;
+  width: 900px;  /*가운데 정렬*/
+  background-color:#f7f7f7;
+  float: right;  /* 왼쪽으로 플로팅 */
+}
+
+section img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0 100px 100px;
+}
+
+
+.contents{
+  background-color:#f7f7f7;
+  float: left;  /* 왼쪽으로 플로팅 */
+}
+
+section h1{
+  text-align: center;
+  font-size: 40px;
+  margin: 30px 0 60px 0;
+  font-weight: bolder;
+  height: 60px;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  line-height: 60px;
+}
+
+
+/* li에 float:left;가 안 먹혀서 찾은 다른 방법 */
+.profile{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  
+}
+
+.profile-img{
+  margin: 0 -10% 0 -10%;
+}
+
+.profile-list{
+  align-items: center;
+  display: flex;
+  margin-top: -10%;
+}
+
+.profile-list li{
+  align-items: center;
+  display: flex;
+  margin: 12px;
+  padding:  5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*pdf 파일 가운데 정렬*/
+.pdf{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.back_pdf embed{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10% 0 10%;
+}
+
+.back_pdf a{
+  align-items: center;
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+  margin: 0 10% 0 10%;
+  font-weight: bolder;
+}
+
+
+/*study.html*/
+/*섹션*/
+
+ul,li {
+  list-style: none;
+}
+
+table{
+  width: 50%;
+  border-collapse: collapse;
+}
+
+table th{
+  padding: 14px 21px;
+  background: #ececec;
+  color: #666;
+  font-size: 15px;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #ddd;
+}
+
+table td {
+  padding: 14px 21px;
+  color: #666;
+  font-size: 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.aside{
+  margin-top: -2%;
+  padding: 0 0 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.select-grup{
+  float: right;
+}
+
+.select-text {
+  color: gray;
+  font-size: 130%;
+  font-weight: bolder;
+  padding: 10px;
+}
+
+.select-dropbox {
+  height: 25px;
+  font-size: 16px;
+}
+
+.select-textbox {
+  height: 20px;
+  weight: 30px
+}
+
+.but{
+  float: right;
+  padding: 0 20px 0 0;
+}
+
+.but input{
+  float: right;
+}
+
+.page{
+    text-align: center;
+    padding: 50px 20px;
+    word-spacing: 10px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+.button {
+    float: right;
+    text-align: center;
+    padding-right: 10px;
+    
+}
+
+.button-gray {
+    border: 0px;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    width: 60px;
+    height: 30px;
+    float: right;
+    text-align: center;
+}
+
+.button-black  {
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    font-weight: bold;
+    width: 70px;
+    height: 30px;
+    float:right;
+    margin-right: 5px;
+  
+}
+
+
+
+
+/*study.html 섹션*/
+#expensiveTable {
+  width: 400px;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+#expensiveTable th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#expenseForm label{
+  margin-left: 15px;
+  font-size: 15px;
+}
+
+#expenseForm input{
+  width: 400px;
+}
+
+
+
+#expenseAmount input {
+  margin-left: 
+}
+
+
+#expenseForm{
+  text-align: center;
+}
+
+#expenseTable th {
+  background-color: #f2f2f2;
+}
+
+input[type="text"], input[type="number"] {
+  padding: 8px;
+  width: 400px;
+}
+
+input[type="number"] {
+  
+  padding: 8px;
+  width: 400px;
+}
+
+#expenseForm button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left:10px ;
+}
+
+.study{
+  height: 1700px;
+}
+
+.dusc h2{
+  text-align: center;
+  font-size: 25px;
+}
+
+.dusc embed{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  padding-left: 60px;
+}
+
+.frontend h2{
+  text-align: center;
+  font-size: 25px;
+}
+
+.frontend embed{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  padding-left: 70px;
+  margin-bottom: 230px;
+}
+
+/*daily.html 섹션*/
+.daily{
+  height: 1000px;
+}
+
+
+#expenseForm input[type="number"]{
+  margin-left: 80px;
+}
+
+/*post.html*/
+
+.card{
+  height: 1200px;
+}
+.card_write{
+  margin-left: 60px;
+  font-size: 15px;
+}
+.card_write input,textarea{
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 10px;
+}
+
+
+
+.card_write .title_w input[type=text]{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 85%;
+}
+.card_write .msg textarea{
+  margin-left: 10px;
+  min-width: 85%;
+  max-width: 85%;
+  min-height: 800px;
+  max-width: 200px;
+  vertical-align: top;
+}
+
+.card_write input[type="file"]{
+  border: none;
+  box-shadow: none;
+  padding: 10px;
+  margin-left: 40px;
+  background-color: none;
+}
+
+.btn_w{
+  
+  right: 0;
+  bottom: 0;
+  margin: 10px 10px 20px 30px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+/*footer*/
+footer{
+  border-top: 1px solid #e4e4e4;
+  background-color:#f8f9fa;
+  padding:1rem 0;
+  margin:1rem 0;
+  background: lightgray;
+
+
+}
+
+
+.footer-message{
+  font-weight: bold;
+  font-size:0.9rem;
+  color:#545e6f;
+  margin-bottom:0.3rem;
+  margin:0 0 0 0.6rem;
+}
+.footer-contact{
+  font-size:0.9rem;
+  color:#545e6f;
+  margin:0.6rem;
+}
+.footer-copyright{
+  font-size:0.9rem;
+  color:#545e6f;
+  margin:0.6rem;
+}
+

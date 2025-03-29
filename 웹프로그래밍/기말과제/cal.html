@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가계부</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 700px;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input[type="text"], input[type="number"] {
+            padding: 8px;
+            width: 700px;
+        }
+
+        input[type="number"] {
+            
+            padding: 8px;
+            width: 700px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h2>가계부</h2>
+
+<form id="expenseForm">
+    <label for="expenseName">지출 항목:</label>
+    <input type="text" id="expenseName" required>
+    <br>
+    <label for="expenseAmount">금액:</label>
+    <input type="number" id="expenseAmount" required>
+
+    <button type="button" onclick="addExpense()">추가</button>
+</form>
+
+<table id="expenseTable">
+    <tr>
+        <th>지출 항목</th>
+        <th>금액</th>
+    </tr>
+</table>
+
+<div id="totalExpense">총 지출: 0</div>
+
+<script>
+    function addExpense() {
+        var expenseName = document.getElementById('expenseName').value;
+        var expenseAmount = parseFloat(document.getElementById('expenseAmount').value);
+
+        if (expenseName && !isNaN(expenseAmount)) {
+            var table = document.getElementById('expenseTable');
+            var newRow = table.insertRow(-1);
+
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
+
+            cell1.innerHTML = expenseName;
+            cell2.innerHTML = expenseAmount.toFixed(0); // 소수점 둘째 자리까지 표시
+
+            // 각 지출 항목을 추가할 때마다 합계 업데이트
+            updateTotalExpense(expenseAmount);
+
+            document.getElementById('expenseForm').reset();
+        } else {
+            alert('지출 항목과 올바른 금액을 입력하세요.');
+        }
+    }
+
+    function updateTotalExpense(amount) {
+        var totalExpenseElement = document.getElementById('totalExpense');
+        var currentTotal = parseFloat(totalExpenseElement.innerText.split(': ')[1]);
+        
+        if (isNaN(currentTotal)) {
+            currentTotal = 0;
+        }
+
+        var newTotal = currentTotal + amount;
+        totalExpenseElement.innerText = '총 지출: ' + newTotal.toFixed(0);
+    }
+</script>
+
+</body>
+</html>
