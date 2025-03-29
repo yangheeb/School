@@ -1,0 +1,19 @@
+.product1{
+    width: 200px;
+    height: 600px;
+    float: left;
+    border: 10px dotted red;
+}
+
+
+#left-sider{
+    font-family: '나눔스퀘어';
+    font-size: 15px;
+    color:gray;
+    list-style: none;
+    text-align: left;
+}
+
+#sider{
+    text-align: left;
+}
