@@ -1,0 +1,48 @@
+*{padding: 0px;
+    margin:0px;
+    font-family: "나눔스퀘어",Arial, Helvetica, sans-serifs;
+    text-align: center;
+    font-weight: 900;
+}
+body{margin-top: 10px;
+    margin:auto; <-- 가운데 정렬 !-->
+    max-width: 980px;
+}
+header h1{
+    display: inline;
+    padding: 30px;
+    height: 50px;
+
+}
+
+a{text-decoration: none;
+    color:plum
+}
+
+nav{margin: 15px;
+    height: 50px;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    border-top: 5px solid rgb(174, 114, 239) ;
+    border-bottom: 5px solid rgb(174, 114, 239);
+    padding: 15px 0px;
+}
+
+nav ul li {
+    display: inline;
+    padding: 15px 20px;
+    letter-spacing: 5px;
+}
+
+
+nav ul li:hover{
+    background-color: beige;
+}
+
+nav ul a:hover{
+    color:black;
+}
+
