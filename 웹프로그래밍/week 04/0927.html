@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="input.jsp" method="post">
+        이메일 : <input type="email" name="email"/><br>
+        URL : <input type="url" name="url"/><br>
+        전화번호 : <input type="tel" name="tel"/><br/>
+        색상 : <input type="color" name="color"/><br/>
+        월 : <input type="month" name="month"/><br/>
+        날짜 : <input type="date" name="date"/><br/>
+        주 : <input type="week" name="week"/><br/>
+        시간 : <input type="time" name="time"/><br/>
+        지역 시간 : <input type="datetime-local" name="localdatetime"/><br/>
+        숫자 : <input type="number" name="number" min="1" max="10" step="2"/><br/>
+        범위 : <input type="range" name="range" min="1" max="10" step="2"/><br/>
+        <input type="submit" value="제출"/><br>
+        <br>
+        <fieldset>
+            <legend>추석 선물</legend>
+        <input type="checkbox" value="v_1"> 선물용 3kg
+        <input type="checkbox" value="v_2"> 선물용 4kg
+        <input type="checkbox" value="v_3"> 선물용 5kg
+        </fieldset>
+        <fieldset>
+            <legend>포장 여부</legend>
+        <input type="radio" name="gift" value="yes"> 선물 포장합니다
+        <input type="radio" name="gift" value="no"> 선물 포장 안 합니다. 
+        </fieldset>
+        <fieldset>
+            <legend>글 적기</legend>
+            <b>메모</b><br>
+            <textarea id="memo" rows="10" cols="50"></textarea>
+        </fieldset>
+        <button type="submit">제출</button>
+        <button type="reset">초기화</button>
+        <button type="button">내용</button>
+    </form>
+</body>
+</html>
