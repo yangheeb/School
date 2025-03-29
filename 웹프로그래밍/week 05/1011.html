@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>선택자 만들기</title>
+    <style>
+        h2,li{color:brown;}
+        #list{background:mistyrose;}
+        .warning{color:red;}
+        body.main{background-color: aliceblue;}
+        div>div>strong{background: yellow;}  /*div자식의 div자식의 strong에 설정*/
+        ul strong{color:dodgerblue;}
+        a:visited{color:purple;}
+        li:hover{background: yellowgreen;}
+        h2:first-letter{color:red;}
+        #list span{color:forestgreen;}
+        div{
+            color:blueviolet;
+            background-color: gold;
+            border-color: #6B8E23;
+        }
+    </style>
+</head>
+<body class="main">
+    <h2 style="color:blue;">Web Programming</h2>
+    <hr>
+    <div>
+        <div>2학기<strong>학습내용</strong></div>
+    
+    <ul id="list">
+        <li><span>HTML5</span></li>
+        <li><strong>CSS</strong></li>
+        <li>JAVASCRIPT</li>
+    </ul>
+        <div class="warning">60점 이하는 F!</div>
+    </div>
+    <div>CSS에서 r,g,b로 구성됩니다</div>
+    <a href="C:\Users\chung\OneDrive\바탕 화면\민정\갯마을 차차차 9.jpg">갯마을차차차보고싶다</a>
+</body>
+</html>
